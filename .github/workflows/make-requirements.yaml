@@ -18,6 +18,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          pip install pipgrip
       - name: Make ${{ inputs.packages }} requirements
         run: python make-req.py ${{ inputs.packages }}
       - name: Setup git author
