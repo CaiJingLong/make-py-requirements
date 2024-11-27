@@ -1,6 +1,10 @@
 # Auto make requirements
 
-This repo is used to automatically make requirements for python packages.
+This repo is used [github actions](https://docs.github.com/en/actions) to automatically make requirements for python packages.
+
+The workflow will be triggered by a [workflow_dispatch](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch) event.
+
+python script is used to make requirements, it uses [pipgrip](https://github.com/ddelange/pipgrip) to get the dependencies.
 
 ## Usage
 
@@ -15,3 +19,7 @@ This repo is used to automatically make requirements for python packages.
 2. 输入包名，用空格分割
 3. 等待工作流完成
 4. 查看 `packages` 目录查看生成的依赖
+
+## License
+
+This project is licensed under the [BSD 3-Clause License](LICENSE).

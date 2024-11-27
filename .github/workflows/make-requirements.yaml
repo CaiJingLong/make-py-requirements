@@ -29,6 +29,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
       - name: Commit and push
         run: |
+          git pull
           git add packages
           git commit -m "update packages ${{ inputs.packages }}"
           git push
