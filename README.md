@@ -1,5 +1,11 @@
 # Auto make requirements
 
+一些 python 包安装非常慢，比如 langflow，其依赖非常庞大，且安装过程中会遇到很多次的依赖冲突问题，
+所以我就写了一个 github action 来自动生成依赖。
+
+Becasue some package of python is very slow to install, such as langflow, the dependency of langflow is very large,
+and it will meet many times of dependency conflicts.
+
 This repo is used [github actions](https://docs.github.com/en/actions) to automatically make requirements for python packages.
 
 The workflow will be triggered by a [workflow_dispatch](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch) event.
