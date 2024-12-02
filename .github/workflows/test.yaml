@@ -1,4 +1,4 @@
-name: Make requirements
+name: Show python version
 
 on:
   workflow_dispatch:
