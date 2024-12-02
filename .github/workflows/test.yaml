@@ -1,0 +1,26 @@
+name: Make requirements
+
+on:
+  workflow_dispatch:
+    inputs:
+      python_version:
+        description: "Python version"
+        required: true
+        type: string
+        default: "3.12"
+
+jobs:
+  show-python-version:
+    runs-on: ubuntu-latest
+    name: Show python version
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ inputs.python_version }}
+      - name: Show python version
+        run: python --version
+      - name: Show python version in env
+        run: python -c "import sys; print(sys.version)"
