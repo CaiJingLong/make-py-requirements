@@ -4,6 +4,9 @@ import sys
 
 count = len(sys.argv)
 
+# read python version from environment variable
+python_version = os.environ.get("PYTHON_VERSION", "3.12")
+
 if count < 2:
     print(
         "请输入参数，至少一个，以空格分割，如：make-req.py package1 package2 package3"
@@ -28,6 +31,8 @@ def write_file(content):
     package_version = package_info[1]
 
     output_path = f"packages/{package_name}/{package_version}"
+
+    content = f"# python {python_version}\n" + content
 
     if not os.path.exists(output_path):
         os.makedirs(output_path)
