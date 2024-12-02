@@ -5,7 +5,7 @@ import sys
 count = len(sys.argv)
 
 # read python version from environment variable
-python_version = os.environ.get("PYTHON_VERSION", "3.12")
+python_version = sys.version.split(" ")[0]
 
 if count < 2:
     print(
@@ -41,7 +41,16 @@ def write_file(content):
 
     with open(file_path, "w") as f:
         f.write(content)
+    
+    input_shell_path = f"{output_path}/install.sh"
+    install_cmd = f''' # conda create -n {package_name} python={python_version}
+# conda activate {package_name}
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/{package_name}/{package_version}/requirements.txt
+pip install -r requirements.txt
+    '''
 
+    with open(input_shell_path, "w") as f:
+        f.write(install_cmd)
 
 for package_name in package_names:
     cmd = f"pipgrip {package_name}"
