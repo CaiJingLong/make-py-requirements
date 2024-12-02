@@ -18,6 +18,12 @@ python script is used to make requirements, it uses [pipgrip](https://github.com
 2. Input the package names, separated by spaces
 3. Wait for the workflow to complete
 4. Check the `packages` directory to see the requirements
+5. Install package by pip like next:
+
+```sh
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langflow/1.1.1/requirements.txt
+pip install -r requirements.txt
+```
 
 ## 中文说明
 
@@ -25,6 +31,12 @@ python script is used to make requirements, it uses [pipgrip](https://github.com
 2. 输入包名，用空格分割
 3. 等待工作流完成
 4. 查看 `packages` 目录查看生成的依赖
+5. 安装示例:
+
+```sh
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langflow/1.1.1/requirements.txt
+pip install -r requirements.txt
+```
 
 ## License
 
