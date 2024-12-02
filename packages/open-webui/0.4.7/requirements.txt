@@ -1,4 +1,4 @@
-# python 3.12
+# python 3.11
 open-webui==0.4.7
 aiocache==0.12.3
 aiofiles==24.1.0
