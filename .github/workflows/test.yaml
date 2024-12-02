@@ -24,3 +24,5 @@ jobs:
         run: python --version
       - name: Show python version in env
         run: python -c "import sys; print(sys.version)"
+      - name: Show python version in env
+        run: python -c "import os; print(os.environ.get('PYTHON_VERSION', '3.12'))"
