@@ -18,12 +18,16 @@ python script is used to make requirements, it uses [pipgrip](https://github.com
 2. Input the package names, separated by spaces
 3. Wait for the workflow to complete
 4. Check the `packages` directory to see the requirements
-5. Install package by pip like next:
+5. Every package has a `install.sh` file, you can use it to install the package
 
 ```sh
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langflow/1.1.1/requirements.txt
+# conda create -n open-webui python=3.11
+# conda activate open-webui
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/requirements.txt
 pip install -r requirements.txt
 ```
+
+The conda is optional, if you want to use conda, remove the `# conda` line.
 
 ## 中文说明
 
@@ -31,12 +35,16 @@ pip install -r requirements.txt
 2. 输入包名，用空格分割
 3. 等待工作流完成
 4. 查看 `packages` 目录查看生成的依赖
-5. 安装示例:
+5. 每个包都有一个 `install.sh` 文件，你可以复制其中的内容来安装包
 
 ```sh
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langflow/1.1.1/requirements.txt
+# conda create -n open-webui python=3.11
+# conda activate open-webui
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/requirements.txt
 pip install -r requirements.txt
 ```
+
+其中 conda 是可选的，如果你想使用 conda，可以删除 `# conda` 行。
 
 ## License
 
