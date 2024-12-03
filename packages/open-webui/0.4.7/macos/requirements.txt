@@ -177,7 +177,7 @@ setuptools==75.6.0
 flask-cors==5.0.0
 fpdf2==2.7.9
 defusedxml==0.7.1
-fonttools==4.55.0
+fonttools==4.55.1
 pillow==11.0.0
 ftfy==6.2.3
 wcwidth==0.2.13
