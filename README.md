@@ -23,7 +23,7 @@ python script is used to make requirements, it uses [pipgrip](https://github.com
 Such as [huggingface-hub](https://github.com/CaiJingLong/make-py-requirements/blob/main/packages/huggingface-hub/0.26.2/install.sh) for example:
 
 ```sh
-conda create -n huggingface-hub python=3.12
+conda create -n huggingface-hub python=3.12 -y
 conda activate huggingface-hub
 
 # If you don't want to use conda, remove the above lines
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 以 [open-webui](https://github.com/CaiJingLong/make-py-requirements/blob/main/packages/open-webui/0.4.7/install.sh) 为例
 
 ```sh
-conda create -n open-webui python=3.11
+conda create -n open-webui python=3.11 -y
 conda activate open-webui
 
 # 如果不想使用 conda，删除上面的，或只复制下面的

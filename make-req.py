@@ -45,7 +45,7 @@ def write_file(content):
     tmp_dir = f"/tmp/{package_name}-{package_version}"
     
     input_shell_path = f"{output_path}/install.sh"
-    install_cmd = f''' conda create -n {package_name} python={python_version}
+    install_cmd = f''' conda create -n {package_name} python={python_version} -y
 conda activate {package_name}
 
 # If you don't want to use conda, remove the above lines

@@ -32,7 +32,7 @@ def make_install_sh(requirements_file):
 
     random_dir = f"{package_name}-{package_version}"
 
-    install_cmd = f"""conda create -n {package_name} python={python_version}
+    install_cmd = f"""conda create -n {package_name} python={python_version} -y
 conda activate {package_name}
 
 # If you don't want to use conda, remove the above lines
