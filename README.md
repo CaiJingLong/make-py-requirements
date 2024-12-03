@@ -34,8 +34,6 @@ wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/hea
 pip install -r requirements.txt
 ```
 
-The conda is optional, if you want to use conda, remove the `# conda` line.
-
 ## 中文说明
 
 1. 创建一个新的工作流调度事件
@@ -57,8 +55,6 @@ cd /tmp/open-webui-0.4.7
 wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/requirements.txt
 pip install -r requirements.txt
 ```
-
-其中 conda 是可选的，如果你想使用 conda，可以删除 `# conda` 行。
 
 ## License
 
