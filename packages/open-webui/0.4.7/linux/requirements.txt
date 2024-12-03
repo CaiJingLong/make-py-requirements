@@ -1,4 +1,4 @@
-# python 3.11
+# python 3.11.10
 open-webui==0.4.7
 aiocache==0.12.3
 aiofiles==24.1.0
@@ -210,7 +210,7 @@ ldap3==2.9.1
 markdown==3.7
 nltk==3.9.1
 joblib==1.4.2
-openai==1.55.3
+openai==1.56.0
 opencv-python-headless==4.10.0.84
 openpyxl==3.1.5
 et-xmlfile==2.0.0
