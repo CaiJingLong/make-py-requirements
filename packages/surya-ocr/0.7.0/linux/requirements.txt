@@ -1,3 +1,4 @@
+# python 3.12.7
 surya-ocr==0.7.0
 filetype==1.2.0
 ftfy==6.3.1
@@ -40,6 +41,7 @@ nvidia-cusparse-cu12==12.3.1.170
 nvidia-nvjitlink-cu12==12.4.127
 nvidia-nccl-cu12==2.21.5
 nvidia-nvtx-cu12==12.4.127
+setuptools==75.6.0
 triton==3.1.0
 transformers==4.46.3
 huggingface-hub==0.26.3
