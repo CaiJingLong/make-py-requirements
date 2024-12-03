@@ -1,4 +1,4 @@
- conda create -n open-webui python=3.11.10 -y
+conda create -n open-webui python=3.11.10 -y
 conda activate open-webui
 
 # If you don't want to use conda, remove the above lines
