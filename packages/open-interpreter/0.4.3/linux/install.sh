@@ -1,4 +1,4 @@
-conda create -n open-interpreter python=3.12 -y
+ conda create -n open-interpreter python=3.12.7 -y
 conda activate open-interpreter
 
 # If you don't want to use conda, remove the above lines
