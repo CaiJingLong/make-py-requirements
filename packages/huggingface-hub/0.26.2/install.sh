@@ -1,4 +1,4 @@
-conda create -n huggingface-hub python=3.12
+conda create -n huggingface-hub python=3.12 -y
 conda activate huggingface-hub
 
 # If you don't want to use conda, remove the above lines

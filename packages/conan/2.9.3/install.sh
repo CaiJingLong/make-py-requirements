@@ -1,4 +1,4 @@
-conda create -n conan python=3.12
+conda create -n conan python=3.12 -y
 conda activate conan
 
 # If you don't want to use conda, remove the above lines
