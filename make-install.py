@@ -30,8 +30,15 @@ def make_install_sh(requirements_file):
     if python_version == '':
         python_version = "3.12"
 
-    install_cmd = f"""# conda create -n {package_name} python={python_version}
-# conda activate {package_name}
+    random_dir = f"{package_name}-{package_version}"
+
+    install_cmd = f"""conda create -n {package_name} python={python_version}
+conda activate {package_name}
+
+# If you don't want to use conda, remove the above lines
+
+mkdir -p /tmp/{random_dir}
+cd /tmp/{random_dir}
 wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/{package_name}/{package_version}/requirements.txt
 pip install -r requirements.txt
 """

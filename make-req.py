@@ -41,13 +41,20 @@ def write_file(content):
 
     with open(file_path, "w") as f:
         f.write(content)
+
+    tmp_dir = f"/tmp/{package_name}-{package_version}"
     
     input_shell_path = f"{output_path}/install.sh"
-    install_cmd = f''' # conda create -n {package_name} python={python_version}
-# conda activate {package_name}
+    install_cmd = f''' conda create -n {package_name} python={python_version}
+conda activate {package_name}
+
+# If you don't want to use conda, remove the above lines
+
+mkdir -p {tmp_dir}
+cd {tmp_dir}
 wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/{package_name}/{package_version}/requirements.txt
 pip install -r requirements.txt
-    '''
+'''
 
     with open(input_shell_path, "w") as f:
         f.write(install_cmd)
