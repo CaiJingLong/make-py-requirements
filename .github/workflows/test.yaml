@@ -26,3 +26,12 @@ jobs:
         run: python -c "import sys; print(sys.version)"
       - name: Show python version in env
         run: python -c "import os; print(os.environ.get('PYTHON_VERSION', '3.12'))"
+  show-os:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    name: Show os for ${{ matrix.os }}
+    steps:
+      - name: Show os
+        run: python get_os.py
