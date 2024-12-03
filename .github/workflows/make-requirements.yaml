@@ -28,7 +28,7 @@ jobs:
           - windows-latest
     runs-on: ${{ matrix.os }}
     continue-on-error: true
-    name: Make ${{ inputs.packages }} requirements
+    name: "[${{ matrix.os }}] Make ${{ inputs.packages }} requirements"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
