@@ -20,10 +20,17 @@ python script is used to make requirements, it uses [pipgrip](https://github.com
 4. Check the `packages` directory to see the requirements
 5. Every package has a `install.sh` file, you can use it to install the package
 
+Such as [huggingface-hub](https://github.com/CaiJingLong/make-py-requirements/blob/main/packages/huggingface-hub/0.26.2/install.sh) for example:
+
 ```sh
-# conda create -n open-webui python=3.11
-# conda activate open-webui
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/requirements.txt
+conda create -n huggingface-hub python=3.12
+conda activate huggingface-hub
+
+# If you don't want to use conda, remove the above lines
+
+mkdir -p /tmp/huggingface-hub-0.26.2
+cd /tmp/huggingface-hub-0.26.2
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/huggingface-hub/0.26.2/requirements.txt
 pip install -r requirements.txt
 ```
 
@@ -37,9 +44,16 @@ The conda is optional, if you want to use conda, remove the `# conda` line.
 4. 查看 `packages` 目录查看生成的依赖
 5. 每个包都有一个 `install.sh` 文件，你可以复制其中的内容来安装包
 
+以 [open-webui](https://github.com/CaiJingLong/make-py-requirements/blob/main/packages/open-webui/0.4.7/install.sh) 为例
+
 ```sh
-# conda create -n open-webui python=3.11
-# conda activate open-webui
+conda create -n open-webui python=3.11
+conda activate open-webui
+
+# 如果不想使用 conda，删除上面的，或只复制下面的
+
+mkdir -p /tmp/open-webui-0.4.7
+cd /tmp/open-webui-0.4.7
 wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/requirements.txt
 pip install -r requirements.txt
 ```
