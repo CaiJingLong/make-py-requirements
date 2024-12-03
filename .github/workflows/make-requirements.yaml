@@ -20,12 +20,14 @@ permissions:
 jobs:
   make-requirements:
     strategy:
+      fail-fast: false
       matrix:
         os:
           - macos-latest
           - ubuntu-latest
           - windows-latest
     runs-on: ${{ matrix.os }}
+    continue-on-error: true
     name: Make ${{ inputs.packages }} requirements
     steps:
       - name: Checkout
