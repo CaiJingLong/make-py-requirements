@@ -20,7 +20,7 @@ python script is used to make requirements, it uses [pipgrip](https://github.com
 4. Check the `packages` directory to see the requirements
 5. Every package has a `install.sh` file, you can use it to install the package
 
-Such as [huggingface-hub](https://github.com/CaiJingLong/make-py-requirements/blob/main/packages/huggingface-hub/0.26.2/install.sh) for example:
+Such as [huggingface-hub](https://github.com/CaiJingLong/make-py-requirements/blob/main/packages/huggingface-hub/0.26.2/linux/install.sh) for example:
 
 ```sh
 conda create -n huggingface-hub python=3.12 -y
@@ -52,7 +52,7 @@ conda activate open-webui
 
 mkdir -p /tmp/open-webui-0.4.7
 cd /tmp/open-webui-0.4.7
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/linux/requirements.txt
 pip install -r requirements.txt
 ```
 

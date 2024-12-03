@@ -18,7 +18,13 @@ permissions:
 
 jobs:
   make-requirements:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os:
+          - macos-latest
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
     name: Make ${{ inputs.packages }} requirements
     steps:
       - name: Checkout

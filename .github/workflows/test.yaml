@@ -36,4 +36,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Show os
-        run: python get_os.py
+        run: python scripts/get_os.py

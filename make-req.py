@@ -1,5 +1,6 @@
 # 读取参数
 import os
+import platform
 import sys
 
 count = len(sys.argv)
@@ -17,6 +18,17 @@ if count < 2:
 package_names = sys.argv[1:]
 
 
+def get_os_str():
+    os_str = platform.system()
+    if os_str == "Darwin":
+        return "macos"
+    if os_str == "Linux":
+        return "linux"
+    if os_str == "Windows":
+        return "windows"
+    return os_str
+
+
 def run_cmd(cmd) -> str:
     return os.popen(cmd).read()
 
@@ -30,7 +42,9 @@ def write_file(content):
     package_name = package_info[0]
     package_version = package_info[1]
 
-    output_path = f"packages/{package_name}/{package_version}"
+    os_str = get_os_str()
+
+    output_path = f"packages/{package_name}/{package_version}/{os_str}"
 
     content = f"# python {python_version}\n" + content
 
@@ -43,9 +57,9 @@ def write_file(content):
         f.write(content)
 
     tmp_dir = f"/tmp/{package_name}-{package_version}"
-    
+
     input_shell_path = f"{output_path}/install.sh"
-    install_cmd = f''' conda create -n {package_name} python={python_version} -y
+    install_cmd = f""" conda create -n {package_name} python={python_version} -y
 conda activate {package_name}
 
 # If you don't want to use conda, remove the above lines
@@ -54,10 +68,11 @@ mkdir -p {tmp_dir}
 cd {tmp_dir}
 wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/{package_name}/{package_version}/requirements.txt
 pip install -r requirements.txt
-'''
+"""
 
     with open(input_shell_path, "w") as f:
         f.write(install_cmd)
+
 
 for package_name in package_names:
     cmd = f"pipgrip {package_name}"
