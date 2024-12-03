@@ -5,5 +5,5 @@ conda activate open-webui
 
 mkdir -p /tmp/open-webui-0.4.7
 cd /tmp/open-webui-0.4.7
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-webui/0.4.7/linux/requirements.txt
 pip install -r requirements.txt

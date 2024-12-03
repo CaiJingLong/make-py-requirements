@@ -5,5 +5,5 @@ conda activate surya-ocr
 
 mkdir -p /tmp/surya-ocr-0.7.0
 cd /tmp/surya-ocr-0.7.0
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/surya-ocr/0.7.0/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/surya-ocr/0.7.0/linux/requirements.txt
 pip install -r requirements.txt

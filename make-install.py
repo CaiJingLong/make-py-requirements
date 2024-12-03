@@ -52,7 +52,7 @@ conda activate {package_name}
 
 mkdir -p /tmp/{random_dir}
 cd /tmp/{random_dir}
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/{package_name}/{package_version}/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/{package_name}/{package_version}/{package_os}/requirements.txt
 pip install -r requirements.txt
 """
 

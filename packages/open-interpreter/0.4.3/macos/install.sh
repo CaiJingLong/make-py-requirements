@@ -5,5 +5,5 @@ conda activate open-interpreter
 
 mkdir -p /tmp/open-interpreter-0.4.3
 cd /tmp/open-interpreter-0.4.3
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-interpreter/0.4.3/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/open-interpreter/0.4.3/macos/requirements.txt
 pip install -r requirements.txt

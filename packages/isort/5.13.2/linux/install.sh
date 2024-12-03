@@ -5,5 +5,5 @@ conda activate isort
 
 mkdir -p /tmp/isort-5.13.2
 cd /tmp/isort-5.13.2
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/isort/5.13.2/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/isort/5.13.2/linux/requirements.txt
 pip install -r requirements.txt

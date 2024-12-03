@@ -5,5 +5,5 @@ conda activate httpie
 
 mkdir -p /tmp/httpie-3.2.4
 cd /tmp/httpie-3.2.4
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/httpie/3.2.4/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/httpie/3.2.4/linux/requirements.txt
 pip install -r requirements.txt

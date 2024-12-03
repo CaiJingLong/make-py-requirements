@@ -5,5 +5,5 @@ conda activate requests
 
 mkdir -p /tmp/requests-2.32.3
 cd /tmp/requests-2.32.3
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/requests/2.32.3/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/requests/2.32.3/linux/requirements.txt
 pip install -r requirements.txt

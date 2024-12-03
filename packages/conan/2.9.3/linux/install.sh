@@ -5,5 +5,5 @@ conda activate conan
 
 mkdir -p /tmp/conan-2.9.3
 cd /tmp/conan-2.9.3
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/conan/2.9.3/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/conan/2.9.3/linux/requirements.txt
 pip install -r requirements.txt

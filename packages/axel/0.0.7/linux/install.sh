@@ -5,5 +5,5 @@ conda activate axel
 
 mkdir -p /tmp/axel-0.0.7
 cd /tmp/axel-0.0.7
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/axel/0.0.7/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/axel/0.0.7/linux/requirements.txt
 pip install -r requirements.txt

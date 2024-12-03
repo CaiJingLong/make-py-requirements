@@ -5,5 +5,5 @@ conda activate langgraph
 
 mkdir -p /tmp/langgraph-0.2.53
 cd /tmp/langgraph-0.2.53
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langgraph/0.2.53/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langgraph/0.2.53/linux/requirements.txt
 pip install -r requirements.txt

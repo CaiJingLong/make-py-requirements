@@ -5,5 +5,5 @@ conda activate langflow
 
 mkdir -p /tmp/langflow-1.1.1
 cd /tmp/langflow-1.1.1
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langflow/1.1.1/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langflow/1.1.1/linux/requirements.txt
 pip install -r requirements.txt

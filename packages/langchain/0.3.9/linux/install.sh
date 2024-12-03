@@ -5,5 +5,5 @@ conda activate langchain
 
 mkdir -p /tmp/langchain-0.3.9
 cd /tmp/langchain-0.3.9
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langchain/0.3.9/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/langchain/0.3.9/linux/requirements.txt
 pip install -r requirements.txt

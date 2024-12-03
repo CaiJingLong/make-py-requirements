@@ -42,9 +42,9 @@ def write_file(content):
     package_name = package_info[0]
     package_version = package_info[1]
 
-    os_str = get_os_str()
+    os_name = get_os_str()
 
-    output_path = f"packages/{package_name}/{package_version}/{os_str}"
+    output_path = f"packages/{package_name}/{package_version}/{os_name}"
 
     content = f"# python {python_version}\n" + content
 
@@ -66,7 +66,7 @@ conda activate {package_name}
 
 mkdir -p {tmp_dir}
 cd {tmp_dir}
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/{package_name}/{package_version}/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/{output_path}/requirements.txt
 pip install -r requirements.txt
 """
 

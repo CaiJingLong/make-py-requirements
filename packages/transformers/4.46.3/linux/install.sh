@@ -5,5 +5,5 @@ conda activate transformers
 
 mkdir -p /tmp/transformers-4.46.3
 cd /tmp/transformers-4.46.3
-wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/transformers/4.46.3/requirements.txt
+wget https://raw.githubusercontent.com/CaiJingLong/make-py-requirements/refs/heads/main/packages/transformers/4.46.3/linux/requirements.txt
 pip install -r requirements.txt
