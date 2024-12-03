@@ -1,4 +1,4 @@
-conda create -n rqalpha python=3.12 -y
+conda create -n rqalpha python=3.12.7 -y
 conda activate rqalpha
 
 # If you don't want to use conda, remove the above lines
