@@ -1,4 +1,4 @@
-conda create -n langflow python=3.12 -y
+ conda create -n langflow python=3.12.7 -y
 conda activate langflow
 
 # If you don't want to use conda, remove the above lines
