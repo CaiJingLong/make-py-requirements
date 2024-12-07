@@ -1,0 +1,2 @@
+# python 3.12.7
+aisuite==0.1.6
